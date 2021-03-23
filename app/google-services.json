@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "253693229140",
+    "project_id": "onlinelecturescheduling",
+    "storage_bucket": "onlinelecturescheduling.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:253693229140:android:7287dfa866281a1047d5c1",
+        "android_client_info": {
+          "package_name": "com.example.onlinelecturescheduling"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "253693229140-srsndi6742lf6ho7pe56mau8r6p26dii.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACoIjzi0PWBkI0I9Kdl6-WTa2JwmGjm5Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "253693229140-srsndi6742lf6ho7pe56mau8r6p26dii.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

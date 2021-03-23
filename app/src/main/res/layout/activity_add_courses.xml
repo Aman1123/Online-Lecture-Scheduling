@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminPanel.AddCourses">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/courseImg"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="25dp"
+                android:src="@drawable/upload_img" />
+
+            <Button
+                android:id="@+id/uploadImg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/courseImg"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="25dp"
+                android:text="upload image"
+                android:textStyle="bold">
+
+            </Button>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/materialCourseName"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/uploadImg"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="25dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/courseName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Course Nmme"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/materialCourseDes"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/materialCourseName"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="25dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/courseDes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Course Description"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/level"
+                style="@style/TextAppearance.AppCompat.Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/materialCourseDes"
+                android:layout_marginLeft="25dp"
+
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="25dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="Select Difficulty Level"
+                android:textSize="20dp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/level"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="25dp">
+
+
+                <RadioButton
+                    android:id="@+id/radioBegginer"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Begginer"
+                    android:textSize="15dp" />
+
+                <RadioButton
+                    android:id="@+id/radioPro"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Professional"
+                    android:textSize="15dp" />
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/submitCourse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radioGroup"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="25dp"
+                android:text="Submit"
+                android:textStyle="bold">
+
+            </Button>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
